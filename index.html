@@ -1,189 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  
-<!--  http://materializecss.com/icons.html-->
-  <title>Pharmacy </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--  http://materializecss.com/icons.html-->
+    <title>Pharmacy </title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+<nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Pharmacy name</a>
+        <a id="logo-container" href="#" class="brand-logo">GoFarmacia</a>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#como_funciona">Como Funciona</a></li>
+            <li><a href="#aplicativo">Aplicativo</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Menu1</a></li>
-        <li><a href="#">Menu2</a></li>
-        <li><a href="#">Menu3</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      
-      
-      
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+        </ul>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-      
-      
-      
-      
-    </div>
-  </nav>
+</nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Pharmacy</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Pharmacy site explanation</h5>
+<div id="index-banner" class="parallax-container valign-wrapper">
+
+
+        <div class="container row center " style="background: rgba(0, 0, 0, 0.16); width: 100% ; ">
+
+
+
+
+            <div class="center  bottom-sheet ">
+                <h2 class="header col s12 light white-text">GoFarmacia</h2>
+                <h5 class="header col s12 light white-text">Pharmacy site explanation</h5>
+            </div>
+
+
         </div>
-        <div class="row center">
-            <a href="http://googl" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">ShowDialog</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="http://curar.co/images/medico-familia.jpg" alt="Unsplashed background img 1"></div>
-  </div>
 
 
-  <div class="container">
+    <div class="parallax"><img src="doctors2.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+        <div class="row  center">
+
+            <div class="col l5 s12">
+
+                <a class="waves-effect waves-light btn modal-trigger btn-large" onclick="openBottomSheet(this)">Take a
+                    Picture</a>
+
+
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l2 s12">
+                <h5 class="teal-text">or</h5>
+            </div>
+            <div class="col l5 s12">
+                <a class="btn-large waves-effect waves-light teal lighten-1" onclick="openDialog(this)">Fill request</a>
+
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Heloo</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Como Funciona</h4>
+                    <p class="center light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                        nibh in purus aliquet hendrerit. Mauris id hendrerit tortor. Donec laoreet, felis mattis
+                        sagittis condimentum.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center teal-text"><i class="material-icons">cloud_queue</i></h2>
+                    <h5 class="center">Liberdade</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
+                    <p class="light">Escolhe a farmácia da sua confiança</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center teal-text"><i class="material-icons">attach_money</i></h2>
+                    <h5 class="center">Simples</h5>
+
+                    <p class="light">Pagamento Seguro Online</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center teal-text"><i class="material-icons">insert_emoticon</i></h2>
+                    <h5 class="center">Agilidade</h5>
+
+                    <p class="light">Seu pedido começa a ser preparada</p>
+                </div>
+            </div>
         </div>
-      </div>
 
     </div>
-  </div>
+</div>
 
 
-  <div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+    <div class="parallax"><img src="doctors.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
-  <div class="container">
+<div class="container">
     <div class="section">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Contact Us</h4>
+                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque
+                    id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
+                    ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem
+                    neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu
+                    mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum
+                    ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
+                    primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            </div>
         </div>
-      </div>
 
     </div>
-  </div>
+</div>
 
 
-  <div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+    <div class="parallax"><img src="nurse.jpg" alt="Unsplashed background img 3"></div>
+</div>
 
-  <footer class="page-footer teal">
+<footer class="page-footer teal">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+                    our full time job. Any amount would help support and continue development on this project and is
+                    greatly appreciated.</p>
 
 
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+
+
+                <div class="collection">
+                    <a href="http://www.google.com" class="collection-item">Google<span class="new badge">1</span></a>
+                    <a href="http://www.ya.ru" class="collection-item">Yandex<span class="new badge">4</span></a>
+                    <a href="#!" class="collection-item">Alan</a>
+                    <a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+                </div>
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+        <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
     </div>
-  </footer>
+</footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 
-  </body>
+</body>
 </html>
